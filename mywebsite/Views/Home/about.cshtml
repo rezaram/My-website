@@ -1,0 +1,42 @@
+﻿@model info
+@{
+    ViewData["Title"] = "about";
+}
+
+<section class="aaa">
+
+
+
+    <div class="container">
+
+        <div class="about-section">
+            <div class="text">
+                <h2>درباره ما</h2>
+                <p>با افتخار به معرفی سایت خود می‌پردازیم. سایت ما با هدف ... (توضیحات بیشتر در این قسمت)</p>
+            </div>
+            <img src="~/ASP--STYLES/about.png" alt="تصویر درباره ما">
+        </div>
+
+        <div class="contact-box">
+            <div class="contact-item">
+                <i class="fas fa-phone-alt"></i>
+                <p class="inline">mobile</p>
+                <td>@Model.phone</td>
+            </div>
+            <div class="contact-item">
+                <i class="far fa-envelope"></i>
+                <p class="inline">Email</p>
+                <span>@Model.email</span>
+            </div>
+            <div class="contact-item">
+                <i class="fab fa-instagram"></i>
+                <p class="inline">instagram ID</p>
+                <td>@Model.instagram</td>
+            </div>
+        </div>
+
+
+
+    </div>
+
+</section>

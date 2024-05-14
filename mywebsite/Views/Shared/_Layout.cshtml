@@ -3,44 +3,61 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - mywebsite</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" />
+    <title>  پارس شاپ | @ViewData["Title"] </title>
+    <link href="~/https://fonts.googleapis.com/css2?family=Vazir&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="~/ASP--STYLES/styles11.css" />
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">mywebsite</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                </div>
+    <!-- Hero image with centered text -->
+    <div class="hero-image">
+        <div class="centered-text">
+            <h1>فروشگاه آنلاین</h1>
+            <div class="choose-and-buy-container">
+                <p>انتخاب کنید و خرید کنید!</p>
             </div>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
+        </div>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2024 - mywebsite - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <!-- Site header -->
+    <header>
+        <div class="container header-container">
+            <div class="header-content">
+                <!-- Replace the logo URL with the one matching your brand -->
+                <a href="#" class="logo">
+                    <img class="logoo" src="~/ASP--STYLES/9bf09583668c9ac9d9d076e60e361f074808034ac3ec61.jpg" alt="" />
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="@Url.Action("index" ,"home")">خانه</a></li>
+                        <li><a href="@Url.Action("about" ,"home")">درباره ما</a></li>
+                        <li><a href="@Url.Action("kala" ,"home")">محصولات</a></li>
+                    </ul>
+                </nav>
+                <span class="mobile-menu-icon">&#9776;</span>
+            </div>
         </div>
+    </header>
+
+    <!-- Home section -->
+    <div>
+        @RenderBody()
+    </div>
+
+    <footer>
+        <div class="social-images">
+            <a href="https://t.me/your_telegram_handle" target="_blank">
+                <img class=" hhhhh" src="~/ASP--STYLES/359874_telegram logo High quality High quality_xl-1024-v1-0.png" alt="Telegram">
+            </a>
+            <a href="https://www.instagram.com/your_instagram_handle" target="_blank">
+                <img class=" hhhhh" src="~/ASP--STYLES/311206_instagram logo High quality High quality_xl-1024-v1-0.png" alt="Instagram">
+            </a>
+        </div>
+        <p>&copy; 2023 فروشگاه آنلاین</p>
     </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+
+
+    <script src="~/scripts.js"></script>
+
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
