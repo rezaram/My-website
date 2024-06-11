@@ -4,7 +4,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+.offer{
+    text-align: center;
+    color: black;
+    font-size: 25px;
+}
 /* Basic Typography */
 body {
     font-family: 'Vazir', sans-serif;
@@ -514,13 +518,12 @@ float: right;
     border-radius: 100px;
     
   }
-  
-
-  
   h1 {
     margin: 0;
   }
   
+
+
   .product-container {
     display: flex;
     justify-content: space-around;
@@ -535,7 +538,6 @@ float: right;
     margin: 15px;
     padding: 20px;
     width: 300px;
-    
     text-align: center;
     transition: transform 0.3s ease-in-out;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -657,9 +659,24 @@ footer span {
     text-align: center;
     transition: transform 0.3s ease-in-out;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+.buybox{
+    width:200px;
+    height:35px;
+    background-color:darkgoldenrod;
+    border:solid 1px black;
+    border-radius:6px;
+}
+.productoff img {
+    max-width: 102%;
+    height: 270px;
+    border-radius: 35px;
+    margin-bottom: 25px;
 }
 
-    .product:hover {
-        transform: translateY(-5px);
+.offer {
+    text-align: center;
+    color: black;
+    font-size: 25px;
     }
