@@ -4,16 +4,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-.offer{
-    text-align: center;
-    color: black;
-    font-size: 25px;
-}
+
 /* Basic Typography */
 body {
     font-family: 'Vazir', sans-serif;
     line-height: 1.5;
-    background-color: #F9EBEB;
+    background-color: white;
 }
 
 h1, h2 {
@@ -111,7 +107,7 @@ a:hover {
 
 /* Hero Section */
 .hero-image {
-    background-image:url(Shshp1000232www.tiktarh.com_.jpg);
+    background-image:url(../Shshp1000232www.tiktarh.com_.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -620,7 +616,7 @@ footer span {
     height:250px;
     width:200px;
 }
-.product {
+.productoff {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -636,7 +632,7 @@ footer span {
         transform: translateY(-5px);
     }
 
-.container {
+.containeroff {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -648,12 +644,15 @@ footer span {
     margin-bottom: 20px;
 }
 
-.product {
+.productoff {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 10px;
-    margin: 0 10px;
-    margin-top: 0px;
+    margin: 50px;
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
     padding: 19px;
     width: 300px;
     text-align: center;
@@ -676,7 +675,8 @@ footer span {
 }
 
 .offer {
-    text-align: center;
     color: black;
     font-size: 25px;
-    }
+    text-align: center;
+    font-family: revert-layer;
+}

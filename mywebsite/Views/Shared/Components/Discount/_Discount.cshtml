@@ -1,0 +1,20 @@
+﻿@model List<Discount>
+
+
+<section>
+    <div class="containeroff">
+        <div class="row">
+            @foreach (var Discount in Model)
+            {   
+            <div class="productoff">
+                <img src="~/@Discount.Image" alt="@Discount.id"/>
+                <h2>@Discount.Name</h2>
+                <p>@Discount.Price قیمت: </p>
+                <p>@Discount.off درصد تخفیف:</p>
+            </div>
+            }
+        </div>
+
+
+    <!-- دستورات مشابه بالا برای محصولات ۲ تا ۶ قرار بگیرد -->
+</section>

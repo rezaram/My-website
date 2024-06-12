@@ -3,98 +3,18 @@
     ViewData["Title"] = "kala";
 }
 
-<section>
-    <h1>محصولات پر فروش</h1>
-</section>
+@* <partial name="Prodoct" />
+ *@
+@* @await Html.PartialAsync("Product")
+ *@
+@await Component.InvokeAsync("Product")
 
 
-<div class="product-container" style="margin-right: 0px;">
-    <div class="product">
-        <img class="imagekala" src="~/ASP--STYLES/7a9fc279973941176c49f4ef84938cb137209e82_1670691560.jpg" alt="محصول 1">
-        <h3>نام محصول 1</h3>
-        <p>قیمت: 100,000 تومان</p>
-    </div>
-
-    <div class="product">
-        <img src="~/ASP--STYLES/83af811f2b8fd43529a00c8d4bdd35a86f59346f_1647152703.jpg" alt="محصول 2">
-        <h3>نام محصول 2</h3>
-        <p>قیمت: 150,000 تومان</p>
-    </div>
-
-    <div class="product">
-        <img src="~/ASP--STYLES/311206_instagram logo High quality High quality_xl-1024-v1-0.png" alt="محصول 2">
-        <h3>نام محصول 2</h3>
-        <p>قیمت: 150,000 تومان</p>
-    </div>
-
-    <div class="product">
-        <img src="~/ASP--STYLES/311206_instagram logo High quality High quality_xl-1024-v1-0.png" alt="محصول 2">
-        <h3>نام محصول 2</h3>
-        <p>قیمت: 150,000 تومان</p>
-    </div>
-
-    <div class="product">
-        <img src="~/ASP--STYLES/311206_instagram logo High quality High quality_xl-1024-v1-0.png" alt="محصول 2">
-        <h3>نام محصول 2</h3>
-        <p>قیمت: 150,000 تومان</p>
-    </div>
-
-    <div class="product">
-        <img src="~/ASP--STYLES/311206_instagram logo High quality High quality_xl-1024-v1-0.png" alt="محصول 2">
-        <h3>نام محصول 2</h3>
-        <p>قیمت: 150,000 تومان</p>
-    </div>
-
-</div>
-<section>
-    <h1>تخفیف های باورنکردنی</h1>
-</section>
+<p class="offer">حراجی ها</p>
 
 
-<div class="product-container" style="margin-right: 0px;">
-    <div class="product">
-        <img class="imagekala" src="~/ASP--STYLES/7a9fc279973941176c49f4ef84938cb137209e82_1670691560.jpg" alt="محصول 1">
-        <h3>نام محصول 1</h3>
-        <p>قیمت: 100,000 تومان</p>
-        <p>تخفیف: %20</p>
-    </div>
+@await Component.InvokeAsync("Discount")
 
-    <div class="product">
-        <img src="~/ASP--STYLES/83af811f2b8fd43529a00c8d4bdd35a86f59346f_1647152703.jpg" alt="محصول 2">
-        <h3>نام محصول 2</h3>
-        <p>قیمت: 150,000 تومان</p>
-        <p>تخفیف: %20</p>
-    </div>
 
-    <div class="product">
-        <img src="~/ASP--STYLES/311206_instagram logo High quality High quality_xl-1024-v1-0.png" alt="محصول 2">
-        <h3>نام محصول 2</h3>
-        <p>قیمت: 150,000 تومان</p>
-        <p>تخفیف: %20</p>
-    </div>
 
-    <div class="product">
-        <img src="~/ASP--STYLES/311206_instagram logo High quality High quality_xl-1024-v1-0.png" alt="محصول 2">
-        <h3>نام محصول 2</h3>
-        <p>قیمت: 150,000 تومان</p>
-        <p>تخفیف: %20</p>
-    </div>
 
-    <div class="product">
-        <img src="~/ASP--STYLES/311206_instagram logo High quality High quality_xl-1024-v1-0.png" alt="محصول 2">
-        <h3>نام محصول 2</h3>
-        <p>قیمت: 150,000 تومان</p>
-        <p>تخفیف: %20</p>
-    </div>
-
-    <div class="product">
-        <img src="~/ASP--STYLES/311206_instagram logo High quality High quality_xl-1024-v1-0.png" alt="محصول 2">
-        <h3>نام محصول 2</h3>
-        <p>قیمت: 150,000 تومان</p>
-        <p>تخفیف: %20</p>
-    </div>
-
-</div>
-    
-</div>
-    </div>

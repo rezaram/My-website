@@ -15,19 +15,19 @@ namespace mywebsite.Controllers
         {
             new item
             {
-                id = 1,title = "تیشرت مردانه سیاه", image="~/ASP--STYLES/9bf09583668c9ac9d9d076e60e361f074808034ac3ec61.jpg", price ="200$"
+                id = 1,title = "تیشرت مردانه سیاه", image="7a9fc279973941176c49f4ef84938cb137209e82_1670691560.jpg", price ="18$",link= "www.digikala.com"
             },
             new item
             {
-                id = 2,title = "تیشرت مردانه سیاه", image="7a9fc279973941176c49f4ef84938cb137209e82_1670691560", price ="18$"
+                id = 1,title = "تیشرت مردانه سیاه", image="7a9fc279973941176c49f4ef84938cb137209e82_1670691560.jpg", price ="18$",link= "www.digikala.com"
             },
             new item
             {
-                id = 3,title = "تیشرت مردانه سیاه", image="ahura-theme-1.jpg", price ="18$"
+                id = 1,title = "تیشرت مردانه سیاه", image="7a9fc279973941176c49f4ef84938cb137209e82_1670691560.jpg", price ="18$",link= "www.digikala.com"
             },
             new item
             {
-                id = 4,title = "تیشرت مردانه سیاه", image="ahura-theme-1.jpg", price ="18$"
+                id = 1,title = "تیشرت مردانه سیاه", image="7a9fc279973941176c49f4ef84938cb137209e82_1670691560.jpg", price ="18$",link= "www.digikala.com"
             },
         };
 
@@ -47,6 +47,8 @@ namespace mywebsite.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+
 
         public IActionResult Kala()
         {

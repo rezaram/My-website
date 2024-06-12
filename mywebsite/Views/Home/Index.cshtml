@@ -28,36 +28,18 @@
 <section id="products">
     <h2>محصولات ما</h2>
     <div class="product-grid">
+        @foreach (var item in Model)
+        {
             <div class="product-card">
 
-            <img class="immgg" src="~/ASP--STYLES/color_image_TLP-11361_ffffff_e5084fae-9239-404a-9196-edc9cbc3dc9c.webp" alt="محصول 1">
-            <div class="product-name"> تیشرت مردانه سیاه</div>
-            <a href="https://www.digikala.com/product/dkp-12693080/%D8%AA%DB%8C-%D8%B4%D8%B1%D8%AA-%D8%A2%D8%B3%D8%AA%DB%8C%D9%86-%DA%A9%D9%88%D8%AA%D8%A7%D9%87-%D9%85%D8%B1%D8%AF%D8%A7%D9%86%D9%87-%D8%A2%D8%B1-%D8%A7%D9%86-%D8%A7%D8%B3-%D9%85%D8%AF%D9%84-99-12021776/">
-                <div class="product-price"> مشاهده قیمت</div>
-            </a>
-        </div>
-        <div class="product-card">
-            <img src="~/ASP--STYLES/84e13e531d6e40a682225498a3d8fec9dc08444c_1695026918.webp" alt="محصول 2">
-            <div class="product-name">لپ تاپ لنوو 15.6 اینچی مدل  3 15IAH7  </div>
-            <a href="https://www.technolife.ir/product-11361/%D9%84%D9%BE-%D8%AA%D8%A7%D9%BE-%D9%84%D9%86%D9%88%D9%88-15.6-%D8%A7%DB%8C%D9%86%DA%86%DB%8C-%D9%85%D8%AF%D9%84-ideapad-gaming-3-15iah7-12650h-i7-16gb-512gb">
-                <div class="product-price"> مشاهده قیمت</div>
-            </a>
-        </div>
-        <div class="product-card">
-            <img src="~/ASP--STYLES/111005490.webp" alt="محصول 3">
-            <div class="product-name">کولر آبی 7000 آبسال مدل AC70 </div>
-            <a href="https://www.digikala.com/product/dkp-1157803/%DA%A9%D9%88%D9%84%D8%B1-%D8%A2%D8%A8%DB%8C-7000-%D8%A2%D8%A8%D8%B3%D8%A7%D9%84-%D9%85%D8%AF%D9%84-ac70/">
-                <div class="product-price"> مشاهده قیمت</div>
-            </a>
-        </div>
-        <div class="product-card">
-            <img src="~/ASP--STYLES/718ccac8ccf8e0fa97957bf0655adddca9352d18_1643441928.webp" alt="محصول 4">
-            <div class="product-name"> کیس کامپیوتر آی تی کو مدل CG 101</div>
-            <a href="https://www.digikala.com/product/dkp-7642410/%DA%A9%DB%8C%D8%B3-%DA%A9%D8%A7%D9%85%D9%BE%DB%8C%D9%88%D8%AA%D8%B1-%D8%A2%DB%8C-%D8%AA%DB%8C-%DA%A9%D9%88-%D9%85%D8%AF%D9%84-cg-101/">
-                <div class="product-price"> مشاهده قیمت</div>
-            </a>
-        </div>
+                <img class="immgg" src="~/@item.image" alt="@item.id">
+                <div class="product-name"> @item.title</div>
+                <a href="@item.link/">
+                    <div class="product-price"> @item.price</div>
+                </a>
 
             </div>
-        
+        }
+
+    </div>
 </section>

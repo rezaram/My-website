@@ -19,41 +19,19 @@
     </div>
 
     <!-- Site header -->
-    <header>
-        <div class="container header-container">
-            <div class="header-content">
-                <!-- Replace the logo URL with the one matching your brand -->
-                <a href="#" class="logo">
-                    <img class="logoo" src="~/ASP--STYLES/9bf09583668c9ac9d9d076e60e361f074808034ac3ec61.jpg" alt="" />
-                </a>
-                <nav>
-                    <ul>
-                        <li><a href="@Url.Action("index" ,"home")">خانه</a></li>
-                        <li><a href="@Url.Action("about" ,"home")">درباره ما</a></li>
-                        <li><a href="@Url.Action("kala" ,"home")">محصولات</a></li>
-                    </ul>
-                </nav>
-                <span class="mobile-menu-icon">&#9776;</span>
-            </div>
-        </div>
-    </header>
+
+    <Partial  name="Header"/>
 
     <!-- Home section -->
     <div>
         @RenderBody()
     </div>
 
-    <footer>
-        <div class="social-images">
-            <a href="https://t.me/your_telegram_handle" target="_blank">
-                <img class=" hhhhh" src="~/ASP--STYLES/359874_telegram logo High quality High quality_xl-1024-v1-0.png" alt="Telegram">
-            </a>
-            <a href="https://www.instagram.com/your_instagram_handle" target="_blank">
-                <img class=" hhhhh" src="~/ASP--STYLES/311206_instagram logo High quality High quality_xl-1024-v1-0.png" alt="Instagram">
-            </a>
-        </div>
-        <p>&copy; 2023 فروشگاه آنلاین</p>
-    </footer>
+    <!-- Site Footer -->
+
+    <Partial name="Footer" />
+
+    <!-- Home section -->
 
 
     <script src="~/scripts.js"></script>

@@ -1,0 +1,16 @@
+﻿@model IEnumerable<mywebsite.Models.Product>
+<section>
+    <h1>محصولات پر فروش</h1>
+    <div class="product-container" style="margin-right: 0px;">
+        @foreach (var Products in Model)
+        { 
+        <div class="product">
+            <img class="imagekala" src="~/@Products.Image" alt=@Products.id>
+            <h3>@Products.Name</h3>
+            <p>@Products.Price "تومان"</p>
+            <button class="buybox">خرید</button>
+        </div>
+        }
+    </div>
+
+</section>
