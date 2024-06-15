@@ -37,5 +37,12 @@
     <script src="~/scripts.js"></script>
 
     @await RenderSectionAsync("Scripts", required: false)
+    <script src="~/lib/jquery-3.4.1.min.js"></script>
+    <script src="~/lib/popper.min.js"></script>
+    <script src="~/lib/bootstrap/js/bootstrap.min.js"></script>
+    @* validation jquery scripts (unobtrusive) *@
+
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
 </body>
 </html>

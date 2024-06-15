@@ -1,0 +1,30 @@
+﻿@model Contact
+
+@{
+    ViewData["Title"] = "ارتباط با ما";
+}
+
+<h2>فرم ارتباط با ما</h2>
+<form class="bcontact" asp-action="Contact" method="post">
+    <label for="username">نام کاربری:</label>
+    <input type="text" asp-for="username" >
+    <span asp-validation-for="username"></span>
+
+    <label for="email">ایمیل:</label>
+    <input type="email" asp-for="email" >
+    <span asp-validation-for="email"></span>
+
+
+    <label asp-for="category">دسته‌بندی محصول:</label>
+    <select asp-for="category" >
+        <option value="clothing">پوشاک</option>
+        <option value="digital">دیجیتال</option>
+        <option value="food">خوراکی</option>
+    </select>
+
+    <label for="message">پیشنهاد یا نظر:</label>
+    <textarea asp-for="message" rows="4" ></textarea>
+    <span asp-validation-for="message"></span>
+
+    <button type="submit">ارسال</button>
+</form>

@@ -406,7 +406,7 @@ footer a {
     height: 2rem;
     display: flex;
     align-items: center;
-    margin-right: 500px;
+    margin-right: 430px;
   }
   
   header .logo img {
@@ -679,4 +679,34 @@ footer span {
     font-size: 25px;
     text-align: center;
     font-family: revert-layer;
+}
+
+.bcontact {
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+label, input, select, textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+input, select, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
 }

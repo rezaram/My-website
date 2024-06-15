@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using mywebsite.Models;
 using System;
@@ -47,13 +48,11 @@ namespace mywebsite.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
-
-
-
         public IActionResult Kala()
         {
             return View();
         }
+
         public IActionResult About()
         {
             var reza = new info()
@@ -64,6 +63,26 @@ namespace mywebsite.Controllers
             };
             return View(reza);
         }
+        [HttpGet]
+        public IActionResult Contact()
+        {
+            var model = new Contact();
+            return View(model);
+        }
 
+
+        //[HttpPost]
+        //public JsonResult Contact(IFormCollection form)
+        //{
+        //    return Json(Ok());
+        //}
+
+        [HttpPost]
+        public JsonResult Contact(Contact form)
+        {
+            Console.WriteLine(form.ToString());
+            return Json(Ok());
+        }
     }
 }
+

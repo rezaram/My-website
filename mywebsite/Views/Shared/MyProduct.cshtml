@@ -1,0 +1,19 @@
+﻿@model List<item>
+<section id="products">
+    <h2>محصولات ما</h2>
+    <div class="product-grid">
+        @foreach (var item in Model)
+        {
+            <div class="product-card">
+
+                <img class="immgg" src="~/@item.image" alt="@item.id">
+                <div class="product-name"> @item.title</div>
+                <a href="@item.link/">
+                    <div class="product-price"> @item.price</div>
+                </a>
+
+            </div>
+        }
+
+    </div>
+</section>
